@@ -1,15 +1,22 @@
+import { DarkMode } from "@/components/kumpulan/DarkMode";
 import Gabung from "@/components/kumpulan/Gabung";
 import { NavigationMenuDemo } from "@/components/kumpulan/MenuNav";
 import { SkeletonDemo } from "@/components/kumpulan/Skeleton";
 
 export default function Home() {
   return (
-    <main className="bg-blue-100 min-h-screen flex justify-center ">
+    <main className="min-h-screen flex justify-center ">
       <div>
         <div className="my-20">
           <div className="p-4">
             <div className="flex flex-col items-center justify-center">
-              <h1 className="text-2xl font-bold text-blue-400">SimoLabs</h1>
+              <div className="flex items-center justify-center">
+                <h1 className="text-2xl font-bold text-blue-400">SimoLabs</h1>
+                <div>
+                  <DarkMode />
+                  {/* <ButtonIcon /> */}
+                </div>
+              </div>
               <SkeletonDemo />
             </div>
             <div className="p-4 text-center flex flex-col items-center justify-center">
